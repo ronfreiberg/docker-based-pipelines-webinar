@@ -37,11 +37,11 @@ steps:
     working_directory: ./02_aws_cli
     commands:
       - aws --version
-  #RunTerraformCli:
-  #  title: Creating VMs with Terraform
-  #  stage: deploying
-  #  image: hashicorp/terraform
-  #  working_directory: ./02_aws_cli
-  #  commands:
-  #    - terraform version
-  #    - terraform init
+  RunTerraformCli:
+    title: Creating VMs with Terraform
+    stage: deploying
+    image: hashicorp/terraform
+    working_directory: ./02_aws_cli
+    commands:
+      - terraform version
+      - terraform init
